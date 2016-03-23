@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<div component="$model/UI2/system/components/justep/window/window" design="device:mobile" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cjm2qMz" class="cjm2qMz" components="$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/button/button,">
+  <style>.text-black.cjm2qMz{color: rgb(33, 33, 33)} .x-titlebar.cjm2qMz{background-color: rgb(50, 189, 96)} .x-img1.cjm2qMz{width: 100px; height: 71px} .x-title.cjm2qMz{height: 20px} .col-xs-4.cjm2qMz{padding-left: 10px; padding-right: 10px}</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cjm2qMz" class="cjm2qMz"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full x-card p11acd0682f6943f0bfb1c8eb55543b72-iosstatusbar cjm2qMz" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cjm2qMz"> 
+    <div class="x-panel-top cjm2qMz" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cjm2qMz"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cjm2qMz" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&#34;title&#34;:&#34;美食推荐&#34;}" __cid="cjm2qMz"> 
+        <div class="x-titlebar-left cjm2qMz" __cid="cjm2qMz"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cjm2qMz" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtnClick" data-config="{&#34;icon&#34;:&#34;icon-chevron-left&#34;,&#34;label&#34;:&#34;&#34;}" __cid="cjm2qMz"> 
+            <i class="icon-chevron-left cjm2qMz" __cid="cjm2qMz"></i>  
+            <span __cid="cjm2qMz" class="cjm2qMz"></span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cjm2qMz" __cid="cjm2qMz">美食推荐</div>  
+        <div class="x-titlebar-right  cjm2qMz" __cid="cjm2qMz">
+          <div class="empty cjm2qMz" __cid="cjm2qMz"></div>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content x-cards cjm2qMz" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cjm2qMz"> 
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list cjm2qMz" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;data&#34;}" __cid="cjm2qMz"> 
+        <ul class="x-list-template hide cjm2qMz" xid="listTemplateUl1" __cid="cjm2qMz" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+          <li xid="li1" class="col-xs-12 cjm2qMz" __cid="cjm2qMz" data-bind="event:{click:$model._callModelFn.bind($model, 'open')}"> 
+            <div class="thumbnail media cjm2qMz" __cid="cjm2qMz">
+              <div class="media-left cjm2qMz" __cid="cjm2qMz">
+                <img width="93" class="x-img1 cjm2qMz" __cid="cjm2qMz" data-bind="attr:{src:$model.getImageUrl($object)}">
+              </div>  
+              <div class="media-body cjm2qMz" __cid="cjm2qMz">
+                <h5 class="x-title text-black cjm2qMz" __cid="cjm2qMz" data-bind="text:ref('title')"></h5>  
+                <span xid="span2" class="text-danger cjm2qMz" __cid="cjm2qMz">￥</span>  
+                <span xid="span3" class="text-danger cjm2qMz" __cid="cjm2qMz" data-bind="text:ref('price')"></span>
+              </div>  
+              <div class="media-right cjm2qMz" __cid="cjm2qMz">
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cjm2qMz" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;icon-android-add&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cjm2qMz"> 
+                  <i xid="i1" class="icon-android-add text-danger cjm2qMz" __cid="cjm2qMz"></i>  
+                  <span xid="span1" __cid="cjm2qMz" class="cjm2qMz"></span>
+                </a>
+              </div>
+            </div> 
+          </li> 
+        </ul> 
+      </div>  
+      <div xid="parent" __cid="cjm2qMz" class="cjm2qMz"></div> 
+    </div>  
+    <style __cid="cjm2qMz" class="cjm2qMz">.x-panel.p11acd0682f6943f0bfb1c8eb55543b72-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.p11acd0682f6943f0bfb1c8eb55543b72-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.p11acd0682f6943f0bfb1c8eb55543b72-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p11acd0682f6943f0bfb1c8eb55543b72-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p11acd0682f6943f0bfb1c8eb55543b72-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.p11acd0682f6943f0bfb1c8eb55543b72-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p11acd0682f6943f0bfb1c8eb55543b72-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p11acd0682f6943f0bfb1c8eb55543b72-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p11acd0682f6943f0bfb1c8eb55543b72-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>
